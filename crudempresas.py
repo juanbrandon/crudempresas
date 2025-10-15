@@ -2,9 +2,9 @@ import os
 from time import sleep
 
 # EJERCIO FINAL MODULO 1 - CRUD EMPRESAS
-# NOMBRE : CESAR MAYTA
+# NOMBRE : BRANDON CONTRERAS 
 
-dic_empresas = {
+ruc = {
     '20454545':{
         'razon_social': 'EMPRESA SAC',
         'direccion':'CALLE EL SOL 123',
@@ -32,6 +32,14 @@ while(True):
         print("=" * ANCHO)
         print(" " * 10 + "REGISTRAR EMPRESA")
         print("=" * ANCHO)
+        ruc=input("Ingrese el RUC de la Empresa: ")
+        nombre_empresa=input("Ingrese el nombre de la Empresa: ")
+        dir_empresa=input("Ingrese la direccion de la Empresa: ")
+        
+        #diccionaio
+        ruc = {   "nombre_empresa: ": nombre_empresa,
+                  "direccion: ":dir_empresa
+    }
     if opcion == 2:
         print("=" * ANCHO)
         print(" " * 10 + "MOSTRAR EMPRESAS")
